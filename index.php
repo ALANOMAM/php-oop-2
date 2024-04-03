@@ -1,3 +1,16 @@
+<?php
+
+require './Models/Prodotto.php';
+
+$prod1 = new Prodotto("yes","23.90");
+var_dump($prod1);
+
+?>
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
