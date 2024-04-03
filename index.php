@@ -10,9 +10,17 @@ require './db.php';
     <title>OOP2</title>
 </head>
 <body>
-    <h1>titolo2</h1>
+    <h1>oop2</h1>
     
-
+  <ul>
+   <?php
+   
+   foreach($items as $item){
+   echo" <li>". $item->nome."</li>";
+   }
+   
+   ?>
+  </ul>
 
 
 </body>

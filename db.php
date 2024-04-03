@@ -29,12 +29,11 @@ $gioco1 = new Gioco("osso finto","20",$gatto);
 
 
 //creo un array che contiene tutti i miei prodotti
-$prodotti=[
+$items=[
     $cibo1,
     $gioco1,
 ];
 
-var_dump($prodotti);
-
+var_dump($items);
 
 ?>
