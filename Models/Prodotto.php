@@ -3,7 +3,7 @@
 
 class Prodotto{
   public $immagine;
-  public $titolo;
+  public $nome;
   public $prezzo;
   public $icona;
 
@@ -11,12 +11,12 @@ class Prodotto{
 /**
  * __construct
  *
- * @param  string $_titolo
+ * @param  string $_nome
  * @param  int $_prezzo
  * @return void
  */
-function __construct($_titolo,$_prezzo){
- $this->titolo = $_titolo;
+function __construct($_nome,$_prezzo){
+ $this->nome = $_nome;
  $this->prezzo = $_prezzo;
 
 }

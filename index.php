@@ -2,6 +2,8 @@
 
 require './Models/Prodotto.php';
 require './Models/Categoria.php';
+require './Models/Cibo.php';
+require './Models/Gioco.php';
 
 //oggetto prod1 della classe prodotto
 $prod1 = new Prodotto("yes","23.90");
@@ -12,7 +14,17 @@ $cane = new Categoria("cane","2 anni","30kg");
 var_dump($cane);
 $gatto = new Categoria("gatto","1 anni","2kg");
 var_dump($gatto);
+
+//oggetti delle classi cibo e gioco che hanno ereditato alcune proprietà dalla classe prodotto.
+
+$cibo1 = new Cibo("croccantini","11.99");
+var_dump($cibo1);
+
+$gioco1 = new Gioco("osso finto","20");
+var_dump($gioco1);
+
 ?>
+
 
 
 
