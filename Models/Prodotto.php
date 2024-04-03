@@ -6,6 +6,8 @@ class Prodotto{
   public $nome;
   public $prezzo;
   public $icona;
+  //pezzo che subirà la composizione
+  public $categoria;
 
 
 /**
@@ -15,7 +17,8 @@ class Prodotto{
  * @param  int $_prezzo
  * @return void
  */
-function __construct($_nome,$_prezzo){
+function __construct($_nome,$_prezzo, Categoria $_categoria ){
+ $this->categoria = $_categoria;
  $this->nome = $_nome;
  $this->prezzo = $_prezzo;
 
