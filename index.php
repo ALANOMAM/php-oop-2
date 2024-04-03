@@ -18,12 +18,26 @@ require './db.php';
    <?php
    
    foreach($items as  $item){
-   echo" <li>"."Nome prodotto : ". $item->nome."</li>";
-   echo" <li>"."Prezzo prodotto : ". $item->prezzo."</li>";
-   echo" <li>"."Prodotto per : ". $item->categoria->tipo."</li>";
-   echo"<br>";
+    ?>
+
+    <div class="col d-flex justify-content-center">
+    <div class="card" style="width: 18rem;">
+        <img src="<?= $item->immagine ?>" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="item-name"><?="Nome prodotto : ". $item->nome ?></h5>
+            <h6 class="item-price text-info "><?= "Prezzo prodotto : ".$item->prezzo ?>
+                <?php 
+                foreach($item->categoria as $infoAnimal) {
+                    echo "<li>$infoAnimal</li>";
+                }
+                ?>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<?php
    }
-   
    ?>
   </ul> 
 <!--bootstrap-->   
@@ -31,3 +45,4 @@ require './db.php';
 
 </body>
 </html>
+
