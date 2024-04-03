@@ -15,8 +15,11 @@ require './db.php';
   <ul>
    <?php
    
-   foreach($items as $item){
-   echo" <li>". $item->nome."</li>";
+   foreach($items as  $item){
+   echo" <li>"."Nome prodotto : ". $item->nome."</li>";
+   echo" <li>"."Prezzo prodotto : ". $item->prezzo."</li>";
+   echo" <li>"."Prodotto per : ". $item->categoria->tipo."</li>";
+   echo"<br>";
    }
    
    ?>
