@@ -16,6 +16,7 @@ require './db.php';
 
   </head>
 <body data-bs-theme="dark">
+  <div><i class="fa-solid fa-cat"></i></div>
 
 <!-- navbar start-->
 <nav class="navbar navbar-expand-lg bg-body-tertiary mb-4">
@@ -55,14 +56,10 @@ require './db.php';
         <div class="card-body">
             <h5 class="item-name"><?="Tipo prodotto : ". $item->nome ?></h5>
             <h5 class="item-price "><?= "Prezzo prodotto : ".$item->prezzo ?></h5>
-             <p>Gli animali che consumano questo prodotto devono ripettare le seguenti caratteristiche  : </p>
-                <?php 
-                //qui entro nell'oggetto "item" e cerco al suo interno l'oggetto "categoria" che rinomino come "infoAnimal"
-                foreach($item->categoria as $infoAnimal) {
-                    echo "<li>$infoAnimal</li>";
-                }
-                ?>
-            </ul>
+            <span><i class="fa-solid <?= $item->categoria->icon ?>"></i></span>
+            <span><?= "(".$item->categoria->name.")" ?></span>
+
+          
         </div>
     </div>
 </div>
