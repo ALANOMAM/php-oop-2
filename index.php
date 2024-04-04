@@ -62,6 +62,7 @@ require './db.php';
 
             <h5 class="item-price "><?= "peso prodotto : ".$item->peso ?></h5>
             <h5 class="item-price "><?= "ingredeienti prodotto : ".$item->ingedienti ?></h5>
+            <h5 class="item-price "><?= "scadenza : ".$item->dataScadenza ?></h5>
 
             <div>
             <button type="button" class="btn btn-primary">Acquista</button>
@@ -95,6 +96,7 @@ require './db.php';
 
             <h5 class="item-price "><?= "materiale prodotto : ".$item->materiale ?></h5>
             <h5 class="item-price "><?= "peso prodotto : ".$item->peso ?></h5>
+            <h5 class="item-price "><?= "scadenza : ".$item->dataScadenza ?></h5>
 
             <div>
             <button type="button" class="btn btn-primary">Acquista</button>
