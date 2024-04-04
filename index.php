@@ -35,20 +35,20 @@ require './db.php';
 
 
     <!--container start-->
-    <div class="container" >
+    <div class="container " >
 
-    <div class="row row-cols-2">   
+    <div class="row row-cols-2  ">   
   
    <?php
    
    foreach($items as  $item){
     ?>
 
-    <div class="col d-flex justify-content-center">
+    <div class=" col d-flex justify-content-center  mt-3">
     <div class="card" style="width:300px">
         <img src = "<?= $item->immagine ?>" class="card-img-top" alt="...">
         <div class="card-body">
-            <h5 class="item-name"><?="Nome prodotto : ". $item->nome ?></h5>
+            <h5 class="item-name"><?="Tipo prodotto : ". $item->nome ?></h5>
             <h5 class="item-price "><?= "Prezzo prodotto : ".$item->prezzo ?></h5>
              <p>Gli animali che consumano questo prodotto devono ripettare le seguenti caratteristiche  : </p>
                 <?php 
