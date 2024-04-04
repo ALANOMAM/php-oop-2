@@ -33,13 +33,22 @@ $gioco1 = new Gioco("Gioco Gatto","20$",$gatto,"palstica");
 $gioco1->immagine ="./img/gioco-gatto.jpg";
 //var_dump($gioco1);
 
+$gioco2 = new Gioco("Gioco Cane","40$",$cane,"silicone");
+$gioco2->immagine ="./img/gioco-cane.jpg";
+//var_dump($gioco1);
+
 
 //creo un array che contiene tutti i miei prodotti
-$items=[
+$foodItems=[
     $cibo1,
     $cibo2,
-    $gioco1,
 ];
+
+$toyItems=[
+    $gioco1,
+    $gioco2,  
+];
+
 
 var_dump($items);
 

@@ -16,12 +16,11 @@ require './db.php';
 
   </head>
 <body data-bs-theme="dark">
-  <div><i class="fa-solid fa-cat"></i></div>
 
 <!-- navbar start-->
 <nav class="navbar navbar-expand-lg bg-body-tertiary mb-4">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Object Oriented Programming</a>
+    <a class="navbar-brand" href="#">Prodotti Per Animali</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -45,13 +44,14 @@ require './db.php';
 
     <div class="row row-cols-2  ">   
   
+  <!-- iterazione arry cibo start-->  
    <?php
    
-   foreach($items as  $item){
+   foreach($foodItems as  $item){
     ?>
 
     <div class=" col d-flex justify-content-center  mt-3">
-    <div class="card" style="width:300px">
+    <div class="card" style="width:500px">
         <img src = "<?= $item->immagine ?>" class="card-img-top" alt="...">
         <div class="card-body">
         <span><i class="fa-solid <?= $item->categoria->icon ?>"></i></span>
@@ -59,7 +59,9 @@ require './db.php';
 
             <h5 class="item-name"><?="Tipo prodotto : ". $item->nome ?></h5>
             <h5 class="item-price "><?= "Prezzo prodotto : ".$item->prezzo ?></h5>
-           
+
+            <h5 class="item-price "><?= "peso prodotto : ".$item->peso ?></h5>
+            <h5 class="item-price "><?= "ingredeienti prodotto : ".$item->ingedienti ?></h5>
 
             <div>
             <button type="button" class="btn btn-primary">Acquista</button>
@@ -72,6 +74,40 @@ require './db.php';
 <?php
    }
    ?>
+ <!-- iterazione arry cibo end-->  
+
+
+<!-- iterazione arry giochi start-->
+<?php
+   
+   foreach($toyItems as  $item){
+    ?>
+
+    <div class=" col d-flex justify-content-center  mt-3">
+    <div class="card" style="width:500px">
+        <img src = "<?= $item->immagine ?>" class="card-img-top" alt="...">
+        <div class="card-body">
+        <span><i class="fa-solid <?= $item->categoria->icon ?>"></i></span>
+        <span><?= "(".$item->categoria->name.")" ?></span>
+
+            <h5 class="item-name"><?="Tipo prodotto : ". $item->nome ?></h5>
+            <h5 class="item-price "><?= "Prezzo prodotto : ".$item->prezzo ?></h5>
+
+            <h5 v-show="$item->materiale =! null" class="item-price "><?= "materiale prodotto : ".$item->materiale ?></h5>
+
+            <div>
+            <button type="button" class="btn btn-primary">Acquista</button>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+<?php
+   }
+   ?>
+<!-- iterazione arry giochi end-->
+
 
     </div>   
 
