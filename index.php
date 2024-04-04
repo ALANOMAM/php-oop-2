@@ -46,7 +46,7 @@ require './db.php';
 
     <div class="col d-flex justify-content-center">
     <div class="card" style="width:300px">
-        <img :src = "$item->immagine" class="card-img-top" alt="...">
+        <img src = "<?= $item->immagine ?>" class="card-img-top" alt="...">
         <div class="card-body">
             <h5 class="item-name"><?="Nome prodotto : ". $item->nome ?></h5>
             <h5 class="item-price "><?= "Prezzo prodotto : ".$item->prezzo ?></h5>

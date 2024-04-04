@@ -26,7 +26,7 @@ $cibo1->immagine ="./img/croccantini.jpg";
  //var_dump($cibo1);
 
 $gioco1 = new Gioco("osso finto","20",$gatto);
-$cibo1->immagine ="";
+$gioco1->immagine ="./img/croccantini.jpg";
 //var_dump($gioco1);
 
 

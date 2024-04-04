@@ -2,7 +2,7 @@
 <?php
 
 class Prodotto{
-  public $immagine;
+  public $immagine  /*= "./img/croccantini.jpg"*/;
   public $nome;
   public $prezzo;
   public $icona;
