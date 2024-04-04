@@ -4,6 +4,7 @@ require './Models/Prodotto.php';
 require './Models/Categoria.php';
 require './Models/Cibo.php';
 require './Models/Gioco.php';
+require_once './Traits/weightable.php';
 
 
 //oggetti cane e gatto  della classe categoria.
@@ -29,11 +30,11 @@ $cibo2 = new Cibo("Crocchette","13.85$",$gatto,"10kg", "sale,pesce,farina");
 $cibo2->immagine ="./img/crocchette-gatto.jpg";
  //var_dump($cibo2);
 
-$gioco1 = new Gioco("Gioco Gatto","20$",$gatto,"palstica");
+$gioco1 = new Gioco("Gioco Gatto","20$",$gatto,"palstica","3kg");
 $gioco1->immagine ="./img/gioco-gatto.jpg";
 //var_dump($gioco1);
 
-$gioco2 = new Gioco("Gioco Cane","40$",$cane,"silicone");
+$gioco2 = new Gioco("Gioco Cane","40$",$cane,"silicone","2kg");
 $gioco2->immagine ="./img/gioco-cane.jpg";
 //var_dump($gioco1);
 

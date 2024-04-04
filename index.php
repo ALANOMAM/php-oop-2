@@ -93,7 +93,8 @@ require './db.php';
             <h5 class="item-name"><?="Tipo prodotto : ". $item->nome ?></h5>
             <h5 class="item-price "><?= "Prezzo prodotto : ".$item->prezzo ?></h5>
 
-            <h5 v-show="$item->materiale =! null" class="item-price "><?= "materiale prodotto : ".$item->materiale ?></h5>
+            <h5 class="item-price "><?= "materiale prodotto : ".$item->materiale ?></h5>
+            <h5 class="item-price "><?= "peso prodotto : ".$item->peso ?></h5>
 
             <div>
             <button type="button" class="btn btn-primary">Acquista</button>

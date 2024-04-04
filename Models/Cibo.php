@@ -1,7 +1,8 @@
 <?php
+require_once './Traits/weightable.php';
  //classe cibo erede della classe prodotti
  class Cibo extends Prodotto{
-    public $peso;
+    use Weightable;
     public $ingedienti;
     
     /**
