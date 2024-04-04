@@ -54,12 +54,17 @@ require './db.php';
     <div class="card" style="width:300px">
         <img src = "<?= $item->immagine ?>" class="card-img-top" alt="...">
         <div class="card-body">
+        <span><i class="fa-solid <?= $item->categoria->icon ?>"></i></span>
+        <span><?= "(".$item->categoria->name.")" ?></span>
+
             <h5 class="item-name"><?="Tipo prodotto : ". $item->nome ?></h5>
             <h5 class="item-price "><?= "Prezzo prodotto : ".$item->prezzo ?></h5>
-            <span><i class="fa-solid <?= $item->categoria->icon ?>"></i></span>
-            <span><?= "(".$item->categoria->name.")" ?></span>
+           
 
-          
+            <div>
+            <button type="button" class="btn btn-primary">Acquista</button>
+            </div>
+            
         </div>
     </div>
 </div>
