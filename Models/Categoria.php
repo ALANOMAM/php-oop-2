@@ -2,23 +2,19 @@
 <?php
 
 class Categoria{
-   public $tipo;
-   public $eta;
-   public $peso;
+   public $name;
+   public $icon;
   
 /**
  * __construct
  *
- * @param  string $_tipo
- * @param  string $_eta
- * @param  string $_peso
- * @return void
+ * @param  string $_nome
+ * @param  string $_icona
  */
-function __construct($_tipo,$_eta,$_peso)
+function __construct($_name,$_icon)
 {
-    $this -> tipo = $_tipo;
-    $this -> eta = $_eta;
-    $this -> peso = $_peso;
+    $this -> name = $_name;
+    $this -> icon = $_icon;
 }
 
 }

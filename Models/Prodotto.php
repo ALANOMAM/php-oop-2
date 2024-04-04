@@ -5,7 +5,6 @@ class Prodotto{
   public $immagine  /*= "./img/croccantini.jpg"*/;
   public $nome;
   public $prezzo;
-  public $icona;
   //pezzo che subirà la composizione
   public $categoria;
 
@@ -15,7 +14,6 @@ class Prodotto{
  *
  * @param  string $_nome
  * @param  int $_prezzo
- * @return void
  */
 function __construct($_nome,$_prezzo, Categoria $_categoria ){
  $this->categoria = $_categoria;

@@ -7,9 +7,9 @@ require './Models/Gioco.php';
 
 
 //oggetti cane e gatto  della classe categoria.
-$cane = new Categoria("cane","2 anni","30kg");
+$cane = new Categoria("cane","fa-dog");
  //var_dump($cane);
-$gatto = new Categoria("gatto","1 anni","2kg");
+$gatto = new Categoria("gatto","fa-cat");
 //var_dump($gatto);
 
 
