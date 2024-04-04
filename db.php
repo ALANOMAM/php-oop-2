@@ -29,7 +29,7 @@ $cibo2 = new Cibo("Crocchette","13.85$",$gatto,"10kg", "sale,pesce,farina");
 $cibo2->immagine ="./img/crocchette-gatto.jpg";
  //var_dump($cibo2);
 
-$gioco1 = new Gioco("Gioco Gatto","20$",$gatto);
+$gioco1 = new Gioco("Gioco Gatto","20$",$gatto,"palstica");
 $gioco1->immagine ="./img/gioco-gatto.jpg";
 //var_dump($gioco1);
 
