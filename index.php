@@ -13,7 +13,7 @@ require './db.php';
 </head>
 <body data-bs-theme="dark">
 
-
+<!-- navbar start-->
 <nav class="navbar navbar-expand-lg bg-body-tertiary mb-4">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Object Oriented Programming</a>
@@ -30,6 +30,7 @@ require './db.php';
     </div>
   </div>
 </nav>
+<!-- navbar end-->
 
 
 
@@ -52,7 +53,7 @@ require './db.php';
             <h5 class="item-price "><?= "Prezzo prodotto : ".$item->prezzo ?></h5>
              <p>Gli animali che consumano questo prodotto devono ripettare le seguenti caratteristiche  : </p>
                 <?php 
-                
+                //qui entro nell'oggetto "item" e cerco al suo interno l'oggetto "categoria" che rinomino come "infoAnimal"
                 foreach($item->categoria as $infoAnimal) {
                     echo "<li>$infoAnimal</li>";
                 }
