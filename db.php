@@ -22,9 +22,11 @@ $prod1 = new Prodotto("yes","23.90", $cane);
 //oggetti delle classi cibo e gioco che hanno ereditato alcune proprietà dalla classe prodotto.
 
 $cibo1 = new Cibo("croccantini","11.99",$cane);
+$cibo1->immagine ="./img/croccantini.jpg";
  //var_dump($cibo1);
 
 $gioco1 = new Gioco("osso finto","20",$gatto);
+$cibo1->immagine ="";
 //var_dump($gioco1);
 
 
