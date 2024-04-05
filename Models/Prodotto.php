@@ -2,7 +2,7 @@
 <?php
 
 class Prodotto{
-  public $immagine  /*= "./img/croccantini.jpg"*/;
+  public $immagine;
   public $nome;
   public $prezzo;
   //pezzo che subirà la composizione
@@ -18,8 +18,11 @@ class Prodotto{
 function __construct($_nome,$_prezzo, Categoria $_categoria ){
  $this->categoria = $_categoria;
  $this->nome = $_nome;
- //$this->prezzo = $_prezzo;
 
+ //------------------------------------------
+     //QUI SOTTO LANCIO EXCEPTION 
+ //------------------------------------------
+ 
 
 // controlla che il prezzo fornito sia effettivamente un numero
 if(is_numeric($_prezzo)) {
@@ -27,7 +30,8 @@ if(is_numeric($_prezzo)) {
   $this->prezzo = $_prezzo;
   
 } else {
-  // se notiamo che sta succedendo qualcosa che non vorremmo
+  // DOVE LANCIO LA MIA EXECPTION. Qui inserisco il messaggio che sarà visto 
+  //quando se verifica l'errore o se notiamo che sta succedendo qualcosa che non vorremmo
   throw new Exception("Il prezzo inserito non è di valore numerico");
 }
 
