@@ -3,7 +3,7 @@ require_once './Traits/weightable.php';
 require_once './Traits/Expireable.php';
  //classe cibo erede della classe prodotti
  class Cibo extends Prodotto{
-    //dove uso i traits
+    //dove uso i traits, ovvero uso la o le proprietà presenti in ogni trait.
     use Weightable;
     use Expireable;
 
