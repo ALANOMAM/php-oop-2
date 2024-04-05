@@ -13,7 +13,7 @@ require_once './Traits/Expireable.php';
      * __construct
      *
      * @param  string $_nome
-     * @param  string $_prezzo
+     * @param  float $_prezzo
      * @param  Categoria $_categoria
      * @param  string $_peso
      * @param  array $_ingredienti
@@ -26,6 +26,8 @@ require_once './Traits/Expireable.php';
         $this-> peso = $_peso ;
         $this-> ingedienti = $_ingredienti; 
         $this-> dataScadenza = $_dataScadenza;
+
+
     }
 
  }

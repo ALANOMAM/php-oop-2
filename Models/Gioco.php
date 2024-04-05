@@ -13,7 +13,7 @@ class Gioco extends Prodotto{
      * __construct
      *
      * @param  string $_nome
-     * @param  string $_prezzo
+     * @param  float $_prezzo
      * @param  Categoria $_categoria
      * @param  string $_materiale
      * @param  string $_peso
